@@ -1,0 +1,224 @@
+@import "root.css";
+@import "nav.css";
+/* .nav
+{
+    background-image: none;
+} */
+.Contact{
+    color: white;
+    margin-top: -650px;
+}
+/* Map section within newshead */
+.map {
+    width : 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+/* Image */
+.map img{
+    width: 100%;
+}
+/* Super Container */
+.data{
+    margin-top:5% ;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    height: 200px;
+}
+/* Div */
+.data div{
+    height: 60%;
+    align-items: center;
+}
+/* Follow section within Data */
+/* Overall */
+.follow{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Para */
+.follow p{
+    font-weight: 400;
+    font-size: 16px;
+}
+/* Call section within Data */
+/* Overall */
+.call {
+    display: flex;
+    justify-content: center;
+}
+.call a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    gap: 1em;
+
+}
+/* Image */
+.call img {
+    height: fit-content;
+    width: auto;
+}
+/* Para */
+.call p{
+    font-weight: 300;
+    font-size: 20px;
+}
+/* Location section within Data */
+/* Overall */
+.loc{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    gap: 8%;
+}
+/* Para */
+.loc p{
+    font-weight: 300;
+    font-size: 20px;
+    width: 100%;
+}
+/* Media Queries for data section and subsections */
+@media only screen and (max-width:1200px ) {
+    .call p, .loc p{
+        font-size: 15px;
+    } 
+}
+@media only screen and (max-width:900px ) {
+    .data {
+        gap: 20px;
+    } 
+    .lines{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width:800px ) {
+    .data{
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        width: 100%;
+        margin: auto;
+    }
+    .call , .follow, .loc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: fit-content;
+    }
+}
+
+/* form section */
+/* Overall */
+#myform{
+    background: #1C140F;
+}
+/* Form */
+form{
+    background: #1C140F;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+    /* background: url("./assest/line1.png") no-repeat, url("./assest/line2.png") no-repeat; */
+}
+/* .line1
+{
+    position: absolute;
+    width: 567px;
+    height: 255.91px;
+    left: 0px;
+    top: 1882px;
+    
+    border: 1px solid #E4E4E4;
+} */
+/* Container for head section*/
+/* Overall */
+.formhead{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Heading */
+.formhead h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+/* Para */
+.formhead p{
+    font-weight: 500;
+    font-size: 13px;
+}
+/* Input section within form */
+/* Overall */
+.forminput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    width: auto;
+    gap: 20%;
+}
+/* Label */
+.forminput label{
+    color: #4F4F4F;
+}
+/* Input */
+.forminput input {
+    background: rgba(255, 255, 255, 0.07);
+    border: 0.6px solid #cecece8c;
+    border-radius: 9px;    
+}
+/* Name section within Input */
+/* Overall */
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+/* Input */
+#name input{
+    width: 90%;
+    height: 45px;
+}
+/* Mail & message sections within Input*/
+/* Overall */
+#mail input,#mess input{
+    width: 95%;
+    height: 45px;
+}
+/* Message input specific*/
+#mess input{
+    height: 200px;
+}
+/*  Submit section within Input*/
+.submit{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+}
+/* Input */
+.submit input{
+    font-weight: 400;
+    font-size: 16px;
+}
+#submit{
+    background-color: var(--color);
+    padding: 10px 20px;
+    color: #fff;
+    border: 0;
+}

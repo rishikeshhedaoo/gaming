@@ -1,0 +1,749 @@
+@import "./root.css";
+
+/* Section Container conatining images */
+.home {
+    margin-top: -650px;
+}
+
+* {
+
+    font-family: 'Poppins';
+}
+
+.homeimg {
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: start; */
+
+    /* margin-left: 40%; */
+    height: 500px;
+}
+
+.home-top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+/* Unity subsection Image */
+.unity img {
+    margin-top: 250px;
+    height: 35px;
+}
+
+/* Unreal subsection Image */
+.unreal {
+    height: fit-content;
+}
+
+.unreal img {
+    margin-right: 250px;
+    height: 80px;
+}
+
+/* Cry subsection Image */
+.cry {}
+
+.cry img {
+    margin-right: 56px;
+    height: 90px;
+}
+
+/* Joystick subsection img */
+.joystick img {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -30%;
+    width: 30%;
+}
+
+.joystick {
+    width: fit-content;
+}
+
+/* Conatin section */
+.contain {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 40%;
+}
+
+/* Homehead1 */
+.homehead1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150%;
+    line-height: 155.2%;
+    color: var(--color);
+}
+
+/* Homehead1 */
+.homehead2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+/* Homehead1 */
+.homehead3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+/* Button of conatin class */
+.contain button {
+    background: linear-gradient(92.48deg, var(--color) 2.08%, var(--color) 117.25%);
+    border-radius: 40px;
+    width: 195px;
+    height: 53px;
+}
+
+/* Detail Button */
+#detailbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height: 53px;
+    background: linear-gradient(92.48deg, var(--color) 2.08%, var(--color) 117.25%);
+    border-radius: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/*  */
+@media only screen and (max-width: 1150px) {
+    .homeimg {
+        /* display: none; */
+    }
+
+    .contain {
+        /* margin-top: -600px; */
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .joystick img {
+        margin-left: -35%;
+    }
+
+    .home-top {
+        margin-bottom: -15%;
+    }
+}
+
+@media only screen and (max-width: 1145px) {
+    .joystick img {
+        margin-left: -40%;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .home-top {
+        flex-direction: column;
+        margin-bottom: -10%;
+    }
+
+    .homeimg {
+        width: 100%;
+    }
+
+    .joystick img {
+        /* margin-left: -%; */
+        /* margin-right: 10%; */
+        height: 500px;
+        width: fit-content;
+        margin-left: -64%;
+    }
+
+    .unity img {
+        margin-left: 200%;
+
+    }
+
+    .contain {
+        height: fit-content;
+        width: 95%;
+        margin-left: 10px;
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (max-width: 583px) {
+    .cry {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+/*  */
+@media only screen and (max-width: 800px) {
+    .homehead1 {
+        font-size: 100%;
+    }
+
+    .homehead2 {
+        font-size: 230%;
+    }
+}
+
+@media only screen and (max-width: 583px) {
+    .homeimg {
+        display: none;
+    }
+
+    .contain {
+        margin-top: -5%;
+    }
+}
+
+/* Current trending games */
+.trending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    height: fit-content;
+}
+
+/*  */
+.trendhead {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+}
+
+/* Span */
+.trendhead span {
+    font-weight: 700;
+    font-size: 31px;
+    color: #FFFFFF;
+}
+
+/* Button */
+.trendhead h5 {
+    font-weight: 500;
+    font-size: 21px;
+    align-items: center;
+}
+
+.trendhead button {
+    margin-right: 50px;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    border: 0;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1220px) {
+    .trending {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 524px) {
+    .trendhead {
+        justify-content: space-between;
+    }
+
+    .trendhead span,
+    .trendhead button {
+        font-size: 25px;
+    }
+
+    .trendhead button {
+        padding: 5px 10px 0 10px;
+    }
+}
+
+@media only screen and (max-width: 442px) {
+    .trending {
+        margin-top: 20%;
+        width: 90%;
+    }
+
+    .trendhead {
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .trendhead button {
+        padding: 5px;
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .gameimg {
+        width: 70%;
+    }
+
+    .game1 {
+
+        flex-direction: row;
+    }
+}
+
+/*  */
+.games {
+    width: 100%;
+    height: fit-content;
+    gap: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*  */
+/* Overall */
+.game1 {
+    height: fit-content;
+}
+
+/* Para */
+.game1 p {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 187.5%;
+
+}
+
+@media only screen and (max-width: 442px) {
+    .games {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .game1 img {
+        margin-left: 15%;
+    }
+}
+
+/*  */
+.contain2 {
+    font-weight: 600;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    width: 52%;
+    /* margin-left: 21%; */
+    text-align: center;
+    justify-content: space-between;
+    /* width: 95%; */
+}
+
+/*  */
+.contain3 {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
+    margin-left: 9.4%;
+    /* margin-top: 5%; */
+    /* height: 173px; */
+    margin-top: 50px;
+}
+
+/*  */
+.contain3head {
+    height: 40px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+/*  */
+.contain3detail {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 90%;
+    height: 101px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*  */
+.contain23 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*  */
+/* Overall */
+.spider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Image */
+.spider img {
+    width: 80%;
+}
+
+@media only screen and (max-width: 716px) {
+    .contain23 {
+        margin-top: 0;
+    }
+
+    .contain2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 716px) {
+    .contain2 {
+        font-size: 25px;
+    }
+}
+
+
+/*  */
+.contain4 {
+    width: 100%;
+    height: fit-content;
+    background: url("./assest/mountain.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+/*  */
+/* Overall */
+.contains4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    align-items: center;
+}
+
+/* Span */
+.contains4 span {
+    color: #FFFFFF;
+    width: 650px;
+    line-height: 187.5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/*  */
+.contain4head {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/*  */
+.contain4detail {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*  */
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+/*  */
+/* Overall */
+.inIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    margin-bottom: 60px;
+}
+
+/* Para */
+.inIcon p {
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 720px) {
+    .contains4 span {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .contain4head {
+        font-size: 20px;
+    }
+
+    .contain4detail {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* Grid Class contain */
+/*  */
+.Grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 13%; */
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 288px) {}
+
+/*  */
+/* Overall */
+.grid1 {
+    margin-top: 5%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 30%; */
+    justify-content: space-around;
+}
+
+/* Para */
+.grid1 p {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*  */
+#gridhead {
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+
+}
+
+@media only screen and (max-width: 288px) {
+    #gridhead {
+        font-size: 25px;
+    }
+}
+
+/*  */
+/* Overall */
+.grid2 {
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* Image */
+.grid2 img {
+    padding: 7px;
+    width: 30%;
+}
+
+/*  */
+/* Overall */
+.seebutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Para */
+.seebutton p {
+    font-weight: 500;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+/*  */
+.box {
+    margin-left: 9.3%;
+    height: 200px;
+    width: 81.2%;
+    background: #1c140f97;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 163px;
+    padding: auto;
+}
+
+/*  */
+.inbox {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*  */
+/* Overall */
+.inbox1 {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+
+/* Span */
+.inbox1 span {
+    width: 100%;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* Para */
+.inbox1 p {
+    width: 70%;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/*  */
+/* Div */
+.inbox2 div {
+    padding: 18px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+/* Input */
+.inbox2 input {
+    border: none;
+    height: 40px;
+    width: 50%;
+    border-color: #FFFFFF;
+}
+
+/* Button */
+.inbox2 button {
+    padding: 5px;
+    width: fit-content;
+    height: 37px;
+    background: var(--color);
+    border-radius: 8px;
+    border-color: white;
+    float: right;
+}
+
+@media only screen and (max-width : 576px) {
+    .grid2 img {
+        width: 140px;
+    }
+
+    .grid2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 424px) {
+    .grid1 p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 1021px) {
+    .continue {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .continue input {
+        width: 100%;
+    }
+
+    .inbox2 {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .continue button {
+        width: fit-content;
+    }
+}
+
+/* Media Query */
+@media only screen and (max-width: 1420px) {
+    .contain2 {
+        margin-top: 20%;
+    }
+}
+
+
+
+/* Media Query */
+@media only screen and (max-width : 850px) {
+    .inbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inbox1 {
+        height: 200px;
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    .inbox1 p {
+        width: 100%;
+    }
+
+    .box {
+        height: fit-content;
+        padding: auto;
+    }
+
+    .inbox2 {
+        width: 70%;
+    }
+
+    /* .inbox2 button
+       {
+        width: 40%;
+       } */
+}

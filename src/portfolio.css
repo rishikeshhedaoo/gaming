@@ -1,0 +1,369 @@
+/* Overall */
+.PortFolio {
+    font-family: 'Rubik';
+    font-style: normal;
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: -650px;
+}
+/* Container for Head section */
+.Port1 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Head section */
+.porthead {
+    margin-top: 5%;
+}
+/* Text in head section */
+#porthead{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6em;
+}
+/* Span */
+#porthead span{
+    font-weight: 600;
+    font-size: 33px;
+    color:#E47500;    
+}
+/* Container within Port1, for porticons */
+/* Overall */
+.portblock1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #1C140F;
+    border-radius: 10px;
+    width: 70%;
+    height: 1000px;
+
+}
+/* element container of Portblock1 */
+/* Overall */
+.porticon {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: fit-content;
+    width: auto;
+}
+/* Background Of icon */
+/* Subsection of porticon containing images */
+.portim {
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    border-radius: 50%;
+    padding: 15px 15px;
+    height: fit-content;
+    width: auto; 
+}
+/* section for the lines around portim elements */
+/* Image */
+.line img
+{   
+    width: 2px;
+    height: 100px ;
+}
+/* Media Query */
+@media only screen and (max-width : 1000px) {
+    .line{
+        display: none;
+    }    
+}
+/* Media Query */
+@media only screen and (max-width : 700px) {
+    .img
+    {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .porticon
+    {   
+        flex-direction: column;
+        margin: 10px;
+        text-align: center;
+    }
+    .porticon span{
+        
+        align-items: center;
+    }
+    .portblock1{
+        padding: 3%;
+        height: 100px;
+        margin-top: 20%;
+    }
+}
+/* SPider Images Style */
+/* Container for Spider section */
+/* Overall */
+.spider2 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    gap: 5em;
+    margin: 7%;
+}
+/* Image subsection */
+.img {
+    width: 50%;
+}
+/* Span */
+.spider2 span {
+    font-weight: 700;
+    font-size: 30px;
+}
+/* Para */
+.spider2 p {
+    font-weight: 400;
+    font-size: 14px;
+}
+/* Heading */
+.spider2 h4 {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    width: 100%;
+    font-size: 14px;
+}
+/* Common for heading and image */
+.spider2 h4 img {
+    size: 2p;
+    margin-right:2% ;
+}
+/* subsection within spider for text */
+/* Overall */
+.spidercontain {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    justify-content: space-around;
+    gap: 1em;
+}
+/* Media Query */
+@media only screen and (max-width : 700px) {
+    .spider2
+    {
+        flex-direction: column;
+    }
+}
+/* iMAGES Section */
+/* Overall */
+.images
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Conatiner for elements in images section */
+/* Overall */
+.Portimage {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    gap: 5em;
+    /* margin: 15%; */
+    margin-bottom: 5%;
+}
+/* Subsection within Portimage for text */
+/* Overall */
+.imgcontain {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 25em;
+}
+/* Span */
+.imgcontain span{
+    font-weight: 500;
+    font-size: 30px;
+}
+/* Span of Portimage */
+.portimage span {
+    font-weight: 500;
+    font-size: 30px;
+}
+/* Readmore */
+#readmore{
+    background: #E47500;
+    width: fit-content;
+    padding: 10px 15px;
+}
+@media only screen and (max-width : 819px) {
+    .Portimage{
+        flex-direction: column-reverse;
+        /* padding: 5%; */
+        width: 100%;
+    }
+    .imgcontain {
+        width: 90%;
+    }
+    #reverse{
+        flex-direction: column;
+    }
+}
+/* Feedback Section */
+/* Overall */
+.feedbackblock{
+    
+    height:fit-content;
+    background: #1C140F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 1em;
+    width:auto;
+}
+/* First (Span at start of feedback) */
+#first
+{   text-align: center;
+    width: 31.4%;
+    font-weight: 500;
+    font-size: 35px;
+}
+/* Media Query */
+@media only screen and (max-width : 700px){
+#first{
+    width: 100%;
+} 
+}   
+/* Second (Para at start of feedback) */
+#second{
+    font-weight: 400;
+font-size: 14px;
+width: 50%;
+height: 52px;
+text-align: center;
+margin-top: 3%;
+}
+/* Media Query */
+@media only screen and (max-width : 700px) {
+    .img
+    {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .porticon
+    {   
+        flex-direction: column;
+        margin: 10px;
+        text-align: center;
+    }
+    .porticon span{
+        
+        align-items: center;
+    }
+    .portblock1{
+        padding: 3%;
+        height: 100px;
+        margin-top: 20%;
+    } 
+}
+/* Container for feedback elements */
+/* Overall */
+.feedback
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Subsection within feedback */
+/* Overall */
+.feedback1
+{
+    display: flex;
+    flex-direction: column;
+    background: #0F0901;
+    width: 300px;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+    height: fit-content;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px #E47500;
+}
+/* Span */
+.feedback1 span
+{ 
+    font-weight: 400;
+    font-size: 14px;
+}
+/* Profile subsection within feedback, acts as container */
+.Profile
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+/*  */
+.profile{
+   background:  #1C140F;
+   box-shadow: 0px 0px 10px #ffffff;
+}
+/* Image id within profile */
+#profileimg{
+    height: 50px;
+}
+/* Container Name subsection */
+/* Overall */
+.Name
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3%;
+}
+/* Span */
+.Name span{
+    font-weight: 500;
+    font-size: 18px;
+}
+/* Para */
+.Name p{
+    align-items: center;
+font-weight: 400;
+font-size: 14px;
+color: #4F5665;
+}
+/* Rating subsection */
+#rating
+{   
+    display: flex;
+    gap: 30%;
+}
+/* Image */
+#rating img{
+    height: 17px;
+}
+/* Media Query */
+@media only screen and (max-width : 819px) {
+    .feedbackblock span {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 478px) {
+    .feedbackblock #second , .feedbackblock #first{
+        width: 100%;
+    }
+}

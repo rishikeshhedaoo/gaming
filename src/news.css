@@ -1,0 +1,210 @@
+@import "root.css";
+/* Overall */
+.News{
+    color: white;
+    margin-top: -650px;
+}
+
+/* head section */
+/* Overall */
+.newshead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Span */
+.newshead span{
+    color: var(--color);
+    font-weight: 400;
+    font-size: 16px;
+}
+/* Heading */
+.newshead h2{
+    font-weight: 600;
+    font-size: 33px;
+}
+/* Para */
+.newshead p{
+    font-weight: 500;
+    font-size: 16px;
+}
+/* Searchbar section */
+.searchbar{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    margin: 5%;
+}
+/* Input */
+.searchbar input{
+    width: 20%;
+    padding: 10px;
+    background: #1C140F;
+    border-radius: 10px;
+    border: 0;
+}
+
+@media only screen and (max-width : 950px) {
+    .searchbar input{
+        width: 50%;
+    }
+}
+
+/* CONTENT section */
+/* Overall */
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Container for in1 & in2 i.e partitions, includes features common to both partitions */
+.incontent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+/* Overall for first partition */
+#incontent1{
+    margin-top: 0%;
+    justify-content: space-around;
+}
+/* First Partition (in1) element section */
+/* Overall */
+.in1{
+    /* margin-bottom: 50%; */
+    width: 100%;
+}
+/* Image */
+.in1 img{
+    width: 100%;
+}
+/* Button Section within in1 */
+/* Overall */
+.button1{
+    margin: 2%;
+}
+/* Button */
+.button1 button{
+    background-color: #2351f5;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: 400;
+    font-size: 16px;
+    border: 0;
+}
+/* Span */
+.button1 span{
+    font-weight: 400;
+    font-size: 16px;
+}
+/* Contanier for text in in1 elements */
+/* Overall */
+.para1{
+    width: 80%;
+}
+/* Heading */
+.para1 h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+/* Para */
+.para1 p{
+    font-weight: 400;
+    font-size: 17px;
+}
+/* Overall for second partition */
+.incontent2{
+    margin-right: 0%;
+    gap: 3%;
+}
+/* Second Partition (in2) element section */
+/* Overall */
+.in2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+/* Image */
+.in2 img{
+    width: 50%;
+    height: fit-content;
+}
+/* Para */
+.in2 p{
+    font-weight: 600;
+    font-size: 23px;  
+    width: 70%;  
+    margin-left: 10%;
+}
+/* Media Query */
+@media only screen and (max-width : 950px) {
+    .in2 p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width : 950px) {
+    .in2 p{
+        font-size: 18px;
+    }
+}
+/* Button subsection within in2 */
+/* Overall */
+.button2{
+    margin-left: 10%;
+}
+/* Button */
+.button2 button{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 0;
+}
+/* Span */
+.button2 span{
+    font-weight: 400;
+    font-size: 14px;
+}
+/* Specific for blue button */
+.blue button{
+    background-color: #2351f5;
+    color: #fff;
+}
+/* Specific for pink button */
+.pink button{
+    background: var(--color);
+    color: #fff;
+}
+/* Specific for orange button */
+.orange button{
+    background: var(--color);
+    color: #fff;
+}
+/* Specific for green button */
+.green button{
+    background: #23A54F;
+    color: #fff;
+}
+/* Specific for purple button */
+.purple button{
+    background: #9921C3;
+    color: #fff;
+}
+
+@media only screen and (max-width : 600px) {
+    .content{
+        flex-direction: column;
+    }
+    .incontent{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .in1 {
+        width:80%;
+    }    
+    .in2{
+        margin: 5%;
+    }
+
+}

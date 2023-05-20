@@ -1,0 +1,317 @@
+@import "root.css";
+@import "nav.css";
+@import "home.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+.about {
+    color: #fff;
+    margin-top: -650px;
+    font-family: 'Poppins', sans-serif;}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* Top Section*/
+/* Overall */
+.top {
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+/* Media query */
+@media only screen and (max-width : 1028px) {
+    .top
+    {   display: flex;
+        flex-direction: column-reverse;
+    }
+}
+/* Image*/
+.top img
+{
+    width: 60%;
+    height: fit-content;
+    margin: 10px;
+}
+
+.intop{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 8%; */
+    gap: 3%;
+}
+/* Media query */
+@media only screen and (max-width : 1028px) {
+    .intop{
+        height: 200px;
+    }
+}
+/* Root section within top */
+.root{
+    margin-left: 8%;
+}
+.root span {
+    color: #FA8305;
+}
+/* For Text container inside top*/
+.intop0 {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+}
+/* Heading */
+.intop h2 {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* Media query*/
+@media only screen and (max-width : 1200px) {
+    .intop h2{
+        font-size: 20px;
+    }
+}
+/* Para */
+.intop p {
+    
+    width: fit-content;
+    font-weight: 400;
+    font-size: 15px;
+}
+/* Get in touch */
+.intop h3 {
+    padding: 10px;
+    font-weight: 500;
+    width: fit-content;
+    font-size: 16px;
+    background: #FA8305;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: -45%;
+}
+
+/* tile section */
+/* Overall */
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 100px;
+    height: fit-content;
+}
+/* Span */
+.tile span {
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 60px;
+}
+/* Container for tiles */
+.intile {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: fit-content; */
+    width: 100%;
+}
+/* tile */
+.tile1 {
+    height: 300px;
+    width: 20%;
+    padding: 3%;
+    margin: 3%;
+    background: #1C140F;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media only screen and (max-width : 628px) {
+    .tile1 h3{
+        font-weight: 600;
+    font-size: 15px;
+    }
+    /* Para */
+    .tile1 p{
+        font-weight: 400;
+        font-size: 10px;
+    }
+}
+/* span */
+.tile1 span{
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    width: 70%;
+    margin-left: 0%;
+}
+/* tile heads */
+#tilehead1{
+    background: rgba(176, 0, 220, 0.11);
+}
+#tilehead2{
+    background: rgba(220, 66, 0, 0.11);
+}
+#tilehead3{
+    background: rgba(0, 220, 141, 0.11);
+}
+/* Heading */
+.tile1 h3{
+    font-weight: 600;
+font-size: 20px;
+}
+/* Para */
+.tile1 p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* middle section*/
+/* Overall */
+.middle{
+   
+    background: #1C140F;
+    display: flex;
+    justify-content: space-around;
+    margin-top:50px ;
+}
+
+
+@media only screen and (max-width : 875px) {
+    .middle{
+        gap: 3em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* Image */
+.middle img{
+    width: 40%;
+    /* padding: 30px; */
+}
+.inmid{
+    margin-left:5%;
+    padding: 30px;
+}
+/* Media Query */
+@media only screen and (max-width : 875px) {
+    .middle img 
+    {
+        width: 100%;
+    }
+}
+/* Container for text */
+.inmid1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10%;
+    width: 35%;
+    /* margin-left: -10%; */
+}
+@media only screen and (max-width : 875px) {
+    .inmid1{
+        width:80%;
+    }
+}
+@media only screen and (max-width : 440px) {
+    .inmid1{
+        margin-left: 0%;
+    }
+}
+@media only screen and (max-width : 340px) {
+    .inmid h3{
+    font-size: 15px;
+    }
+    /* Para */
+    .inmid p{
+        font-size: 10px;
+    }
+    .inmid span{
+        font-size: 12px;
+    }
+}
+/* Span */
+.inmid1 span{
+    font-weight: 500;
+    font-size: 16px;
+}
+/* Heading */
+.inmid1 h3{
+    font-weight: 600;
+    font-size: 28px;
+}
+/* Para */
+.inmid1 p{
+    font-weight: 400;
+font-size: 16px;
+}
+@media only screen and (max-width : 340px) {
+    .inmid1 h3{
+    font-size: 20px;
+    }
+    /* Para */
+    .inmid1 p{
+        font-size: 12px;
+    }
+    .inmid1 span{
+        font-size: 12px;
+    }
+}
+
+/* icontile section*/
+/* Overall */
+.icontile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    height: fit-content;
+}
+.team
+{
+    font-size: 20px;
+    font-weight: 300;
+}
+/* container for icons*/
+.inicon{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: auto;
+    height: fit-content; 
+}
+/*  icon */
+.icon1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1C140F;
+    border-radius: 20px;
+    width: 250px;
+    height: fit-content;
+    padding: 10px;
+    margin: 1.5%;
+}
+
+
+
+
+.contain3{
+    display: flex;
+    flex-direction: column;
+}
+.inbox2{
+    height: 50%;
+}
